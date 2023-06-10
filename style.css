@@ -8,6 +8,7 @@
   /* ### Neutral */
   --dark-blue: hsl(249, 10%, 26%);
   --grayish-blue: hsl(246, 25%, 77%);
+  --white-color: #fff;
 }
 
 * {
@@ -18,6 +19,12 @@
 
 body {
   font-family: 'Poppins', sans-serif;
+  background: url('images/bg-intro-mobile.png'), var(--red);
+}
+
+h1 {
+  text-align: center;
+  color: var(--white-color);
 }
 
 footer {
