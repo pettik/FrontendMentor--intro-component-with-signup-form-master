@@ -11,16 +11,16 @@
   --white-color: #fff;
 }
 
-.template_background{
-  content:'';
-  width:375px;
+.template_background {
+  content: '';
+  width: 375px;
   height: 1000px;
-  margin:0 auto;
+  margin: 0 auto;
   transform: translateX(-50%);
-  left:50%;
-  padding:0;
-  position: absolute;
-  background:url('design/mobile-design.jpg');
+  left: 50%;
+  padding: 0;
+  position: fixed;
+  background: url('design/mobile-design.jpg');
   background-size: 100%;
   z-index: -1;
 }
@@ -36,10 +36,30 @@ body {
   background: url('images/bg-intro-mobile.png'), var(--red);
 }
 
+.container {
+  max-width: 375px;
+  height: 100%;
+  margin: 0 auto;
+}
+
 h1 {
   text-align: center;
   color: var(--white-color);
-  margin-
+  max-width: 18rem;
+  margin: 0 auto;
+  padding-top: 5.5rem;
+  line-height: 1.4;
+  margin-bottom: 1.3rem;
+  font-size: 1.75em;
+}
+
+.main-data p {
+  text-align: center;
+  color: var(--white-color);
+  line-height: 1.6;
+  padding: 0 2rem;
+  opacity: 0.4;
+  margin-bottom: 3.5rem;
 }
 
 footer {
