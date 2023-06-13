@@ -59,7 +59,21 @@ h1 {
   line-height: 1.6;
   padding: 0 2rem;
   opacity: 0.4;
-  margin-bottom: 3.5rem;
+  margin-bottom: 4rem;
+}
+
+.trial {
+  background-color: var(--blue);
+
+  border: none;
+  border-radius: 0.5rem;
+  margin: 0 1.5rem 1.2rem;
+  color: var(--white-color);
+  padding: 1.2rem 4.7rem;
+  line-height: 1.6;
+  letter-spacing: 0.35px;
+  opacity: 0.5;
+  font-size: 1rem;
 }
 
 footer {
