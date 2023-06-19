@@ -73,7 +73,6 @@ h1 {
   padding: 1.1rem 3.5rem;
   line-height: 1.6;
   letter-spacing: 0.35px;
-  opacity: 0.5;
   font-size: 1rem;
   box-shadow: var(--box-shadow);
 }
@@ -81,9 +80,9 @@ h1 {
 form {
   background-color: var(--white-color);
   border-radius: 0.5rem;
-  opacity: 0.7;
   padding: 1.5rem 1.5rem;
   box-shadow: var(--box-shadow);
+  opacity: 0.5;
 }
 
 form input {
@@ -96,6 +95,20 @@ form input:not([type='submit']) {
   margin-bottom: 1.05rem;
   font-weight: 600;
   font-size: 0.94rem;
+}
+
+form button {
+  width: 100%;
+  text-transform: uppercase;
+  color: var(--white-color);
+  background-color: var(--green);
+  border: none;
+  padding: 1rem 0;
+  box-shadow: 0 0.25rem 0.05rem #3daa7c;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border-radius: 0.5rem;
+  margin-bottom: 0.9rem;
 }
 
 footer {
