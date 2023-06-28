@@ -47,6 +47,7 @@ body {
   margin: 0 auto;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+  flex-direction: column;
 }
 
 h1 {
@@ -114,6 +115,12 @@ form button {
   border-radius: 0.5rem;
   margin-top: -0.1rem;
   margin-bottom: 0.9rem;
+  cursor: pointer;
+  transition: background 0.3s ease-in;
+}
+
+form button:hover {
+  background-color: #77e2b4;
 }
 
 form p {
