@@ -90,6 +90,19 @@ form {
   opacity: 0.5;
 }
 
+.input-box {
+  position: relative;
+}
+
+.error-message {
+  color: var(--red);
+  position: absolute;
+  bottom: 0.1rem;
+  right: -0.75rem;
+  font-style: italic;
+  font-size: 0.65rem;
+}
+
 form input {
   display: block;
   width: 100%;
