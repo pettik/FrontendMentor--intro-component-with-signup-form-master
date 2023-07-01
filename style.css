@@ -115,6 +115,11 @@ form input:not([type='submit']) {
   font-size: 0.94rem;
 }
 
+form input:not([type='submit']).red,
+form input:not([type='submit']).red:active {
+  border-color: var(--red);
+}
+
 form button {
   width: 100%;
   text-transform: uppercase;
