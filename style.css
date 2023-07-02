@@ -95,6 +95,7 @@ form {
 }
 
 .error-message {
+  /* visibility: hidden; */
   color: var(--red);
   position: absolute;
   bottom: 0.1rem;
