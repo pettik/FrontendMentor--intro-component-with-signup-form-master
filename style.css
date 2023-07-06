@@ -94,7 +94,26 @@ form {
   position: relative;
 }
 
+.exclamation-mark {
+  display: none;
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  width: 0.8rem;
+  height: 0.8rem;
+
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+  color: var(--white-color);
+  font-weight: 900;
+  padding: 0.8rem;
+  border-radius: 50%;
+  font-size: 1rem;
+}
+
 .error-message {
+  display: none;
   /* visibility: hidden; */
   color: var(--red);
   position: absolute;
@@ -118,7 +137,7 @@ form input:not([type='submit']) {
 
 form input:not([type='submit']).red,
 form input:not([type='submit']).red:active {
-  border-color: var(--red);
+  border: 2px solid var(--red);
 }
 
 form button {

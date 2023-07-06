@@ -2,56 +2,60 @@
 
 // Function to validate the form inputs
 function validateForm() {
-  // Retrieve form inputs
   const nameInput = document.getElementById('name');
-  const lastNameInput = document.getElementById('lastname');
+  const lastnameInput = document.getElementById('lastname');
   const emailInput = document.getElementById('email');
   const passwordInput = document.getElementById('password');
 
-  // Retrieve error message elements
-  const nameErrorMessage = document.querySelector('#name + p.error-message');
-  const lastNameErrorMessage = document.querySelector(
-    '#lastname + p.error-message'
-  );
-  const emailErrorMessage = document.querySelector('#email + p.error-message');
-  const passwordErrorMessage = document.querySelector(
-    '#password + p.error-message'
-  );
-
-  // Remove 'red' class from all inputs
-  nameInput.classList.remove('red');
-  lastNameInput.classList.remove('red');
-  emailInput.classList.remove('red');
-  passwordInput.classList.remove('red');
-
-  // Hide all error messages
-  nameErrorMessage.style.display = 'none';
-  lastNameErrorMessage.style.display = 'none';
-  emailErrorMessage.style.display = 'none';
-  passwordErrorMessage.style.display = 'none';
-
-  // Validate name (only strings)
-  if (!isAlphabetical(nameInput.value)) {
+  // Validate name input
+  if (!nameInput.value.trim()) {
     nameInput.classList.add('red');
-    nameErrorMessage.style.display = 'block';
+    nameInput.nextElementSibling.style.display = 'flex';
+    document.querySelector('.error-name').style.display = 'block';
+  } else {
+    nameInput.classList.remove('red');
+    nameInput.nextElementSibling.style.display = 'none';
+    document.querySelector('.error-name').style.display = 'none';
   }
 
-  // Validate last name (only strings)
-  if (!isAlphabetical(lastNameInput.value)) {
-    lastNameInput.classList.add('red');
-    lastNameErrorMessage.style.display = 'block';
+  // Validate lastname input
+  if (!lastnameInput.value.trim()) {
+    lastnameInput.classList.add('red');
+    lastnameInput.nextElementSibling.style.display = 'flex';
+    document.querySelector('.error-lastname').style.display = 'block';
+  } else {
+    lastnameInput.classList.remove('red');
+    lastnameInput.nextElementSibling.style.display = 'none';
+    document.querySelector('.error-lastname').style.display = 'none';
   }
 
-  // Validate email format
-  if (!isValidEmail(emailInput.value)) {
+  // Validate email input
+  const email = emailInput.value.trim();
+  if (!email) {
     emailInput.classList.add('red');
-    emailErrorMessage.style.display = 'block';
+    emailInput.nextElementSibling.style.display = 'flex';
+    document.querySelector('.error-email').style.display = 'block';
+  } else if (!isValidEmail(email)) {
+    emailInput.classList.add('red');
+    emailInput.nextElementSibling.style.display = 'flex';
+    document.querySelector('.error-email').textContent =
+      'Looks like this is not a valid email';
+    document.querySelector('.error-email').style.display = 'block';
+  } else {
+    emailInput.classList.remove('red');
+    emailInput.nextElementSibling.style.display = 'none';
+    document.querySelector('.error-email').style.display = 'none';
   }
 
-  // Validate password (at least 8 characters long, including special symbols and numbers)
-  if (!isValidPassword(passwordInput.value)) {
+  // Validate password input
+  if (!passwordInput.value.trim()) {
     passwordInput.classList.add('red');
-    passwordErrorMessage.style.display = 'block';
+    passwordInput.nextElementSibling.style.display = 'flex';
+    document.querySelector('.error-password').style.display = 'block';
+  } else {
+    passwordInput.classList.remove('red');
+    passwordInput.nextElementSibling.style.display = 'none';
+    document.querySelector('.error-password').style.display = 'none';
   }
 }
 
