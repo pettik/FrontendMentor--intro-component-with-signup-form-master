@@ -181,6 +181,30 @@ footer {
 @media screen and (min-width: 768px) {
   .container {
     flex-direction: row;
-    max-width: 100%;
+    max-width: 1120px;
+    border: 3px solid blue;
+  }
+
+  .template_background {
+    content: '';
+    width: 1440px;
+    height: 800px;
+    margin: 0 auto;
+    transform: translateX(-50%);
+    left: 50%;
+    padding: 0;
+    position: fixed;
+    background: url('design/desktop-design.jpg');
+    background-size: 100%;
+    z-index: -1;
+  }
+
+  .container > div {
+    width: 50%;
+  }
+  .main-data h1,
+  .main-data p {
+    text-align: left;
+    margin: 0;
   }
 }
