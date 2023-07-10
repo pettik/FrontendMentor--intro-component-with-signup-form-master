@@ -183,6 +183,8 @@ footer {
     flex-direction: row;
     max-width: 1120px;
     border: 3px solid blue;
+    padding-left: 0.15rem;
+    padding-right: 0;
   }
 
   .template_background {
@@ -205,6 +207,20 @@ footer {
   .main-data h1,
   .main-data p {
     text-align: left;
-    margin: 0;
+  }
+
+  h1 {
+    padding-top: 18rem;
+    font-size: 3.1rem;
+    padding-left: 0;
+    opacity: 0.8;
+    line-height: 1.2;
+    max-width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  .main-data p {
+    font-size: 1rem;
+    letter-spacing: 0.1px;
   }
 }
