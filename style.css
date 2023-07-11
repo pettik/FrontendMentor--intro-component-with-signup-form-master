@@ -70,7 +70,7 @@ h1 {
 
 .trial {
   background-color: var(--blue);
-
+  cursor: pointer;
   border: none;
   border-radius: 0.5rem;
   margin: 0 0 1.5rem;
@@ -213,7 +213,6 @@ footer {
     padding-top: 18rem;
     font-size: 3.1rem;
     padding-left: 0;
-    opacity: 0.8;
     line-height: 1.2;
     max-width: 100%;
     margin-bottom: 1.5rem;
@@ -222,5 +221,23 @@ footer {
   .main-data p {
     font-size: 1rem;
     letter-spacing: 0.1px;
+  }
+
+  /* ====== main content ====== */
+  .main-content .trial {
+    margin-top: 7.4rem;
+    display: block;
+    width: 98%;
+    margin-left: 0.8rem;
+    opacity: 0.4;
+  }
+
+  form {
+    margin-left: 0.8rem;
+    padding: 2.4rem;
+  }
+
+  .input-box {
+    border-radius: 1rem;
   }
 }
