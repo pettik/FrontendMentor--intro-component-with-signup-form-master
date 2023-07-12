@@ -12,7 +12,7 @@
   --white-color: #fff;
 }
 
-.template_background {
+/* .template_background {
   content: '';
   width: 375px;
   height: 1000px;
@@ -24,7 +24,7 @@
   background: url('design/mobile-design.jpg');
   background-size: 100%;
   z-index: -1;
-}
+} */
 
 * {
   padding: 0;
@@ -44,10 +44,11 @@ body {
 .container {
   max-width: 375px;
   height: 100%;
-  margin: 0 auto;
+  margin: 0 auto 3rem;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   flex-direction: column;
+
 }
 
 h1 {
@@ -87,7 +88,7 @@ form {
   border-radius: 0.5rem;
   padding: 1.5rem 1.5rem;
   box-shadow: var(--box-shadow);
-  opacity: 0.5;
+
 }
 
 .input-box {
@@ -126,6 +127,10 @@ form {
 form input {
   display: block;
   width: 100%;
+}
+
+form input:active{
+  border-radius: 0;
 }
 
 form input:not([type='submit']) {
@@ -182,12 +187,12 @@ footer {
   .container {
     flex-direction: row;
     max-width: 1120px;
-    border: 3px solid blue;
+    padding-top: 3px;
     padding-left: 0.15rem;
     padding-right: 0;
   }
 
-  .template_background {
+  /* .template_background {
     content: '';
     width: 1440px;
     height: 800px;
@@ -199,7 +204,7 @@ footer {
     background: url('design/desktop-design.jpg');
     background-size: 100%;
     z-index: -1;
-  }
+  } */
 
   .container > div {
     width: 50%;
@@ -229,7 +234,6 @@ footer {
     display: block;
     width: 98%;
     margin-left: 0.8rem;
-    opacity: 0.4;
   }
 
   form {
@@ -240,4 +244,14 @@ footer {
   .input-box {
     border-radius: 1rem;
   }
+
+  form input:not([type='submit']) {
+    padding: 1.13rem 2rem;
+    margin-bottom: 1.2rem;
+}
+
+form button {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
 }
