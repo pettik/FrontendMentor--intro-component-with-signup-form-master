@@ -48,7 +48,6 @@ body {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   flex-direction: column;
-
 }
 
 h1 {
@@ -136,8 +135,8 @@ form input:active{
 }
 
 form input:not([type='submit']) {
-  padding: 1.1rem 1rem;
-  margin-bottom: 1.05rem;
+  padding: 1.15rem 1.2rem;
+    margin-bottom: 1.05rem;
   font-weight: 600;
   font-size: 0.94rem;
 }
@@ -193,6 +192,7 @@ footer {
     padding-top: 3px;
     padding-left: 0.15rem;
     padding-right: 0;
+    
   }
 
   /* .template_background {
@@ -241,14 +241,14 @@ footer {
 
   form {
     margin-left: 0.8rem;
-    padding: 2.4rem;
+    padding: 2.5rem 2.8rem 2.5rem 2.5rem;
   }
 
 
 
   form input:not([type='submit']) {
     padding: 1.13rem 2rem;
-    margin-bottom: 1.2rem;
+    margin-bottom: 1.3rem;
 }
 
 form button {
