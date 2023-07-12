@@ -9,8 +9,7 @@ This is my solution to the [Intro component with sign up form challenge on Front
 <img src="design/pettik-intro-component-netlify-app-inputs.png">
 
 # Mobile preview 📱
-<img src="design/pettik-intro-component-netlify-app-mobile.png">
+<img src="design/pettik-intro-component-netlify-app-mobile.png" width="350px">
 
-# Live site 🌍
- ➡➡➡ <a href="https://pettik-intro-component.netlify.app/">CLICK HERE TO VISIT DEMO PAGE</a>  ⬅⬅⬅
+#  ➡ <a href="https://pettik-intro-component.netlify.app/">Live DEMO </a>  ⬅
 
