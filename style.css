@@ -127,6 +127,8 @@ form {
 form input {
   display: block;
   width: 100%;
+  border: 1.5px solid var(--grayish-blue);
+  border-radius: .25rem;
 }
 
 form input:active{
@@ -142,7 +144,7 @@ form input:not([type='submit']) {
 
 form input:not([type='submit']).red,
 form input:not([type='submit']).red:active {
-  border: 2px solid var(--red);
+  border: 1.5px solid var(--red);
 }
 
 form button {
@@ -171,6 +173,7 @@ form p {
   padding: 0 1.25rem;
   line-height: 1.8;
   text-align: center;
+  color: var(--grayish-blue);
 }
 
 form p a {
@@ -241,9 +244,7 @@ footer {
     padding: 2.4rem;
   }
 
-  .input-box {
-    border-radius: 1rem;
-  }
+
 
   form input:not([type='submit']) {
     padding: 1.13rem 2rem;
